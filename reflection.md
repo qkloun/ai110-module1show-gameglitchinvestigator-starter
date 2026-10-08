@@ -5,8 +5,15 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+- - The game looked perfectly fine, the UI was clean, simple and without any defects. It also had working theme features in the website same with the new game and submit guess buttons. However I did notice that there is a missing attempt from the 8 that was supposed to be guaranteed.
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+
+- - The hints were backwards.
+- - There is an attempt missing from the game.
+- - Hard being easier than Normal
+- - New game doesn't refresh game state
+- - Wrong answers can increase points
 
 **Bug Reproduction Log**
 
@@ -14,9 +21,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| "75" | "Should've said go LOWER" | Said go HIGHER| none |
+| none|"8 attempts available to guess the number"| "session starts with one attempt used"| none |
+| "New Game" | "Expected to for the game to reset the games status"| "After losing, I clicked New Game, but it still said 'Game over' and wouldn't accept guesses"| none |
 
 ---
 
